@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page">
+    <meta name="author" content="Jose Okitandende Okungu">
+    
+    <title>🏢 Home | Jose Okitandende Okungu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="advance" src="images/jose.jpg" alt="Jose Okitandende photo">
+        </div>
+        <h1>Jose Okungu</h1>
+        <button id="menu" title="Menu"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="https://github.com/joseokungu" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/jos%C3%A9-okitandende-okungu-4142a2275/" target="_blank">LinkedIn Profile</a></li>
+            <li><a href="#">Chamber</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="courseWork-box">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Chamber of Commerce Site Planning</li>
+                <li>Chamber of Commerce Directory Page</li>
+                <li>Chamber Home Page</li>
+                <li>Chamber Membership Application Form / Project Subject Proposal</li>
+                <li>Chamber Discover Page / Project Site Plan
+                </li>
+                <li>Individual Website Project</li>
+                <li>Final Exam Test</li>
+            </ul>
+        </section>
+        <section class="country-box">
+            <h2>DRC</h2>
+            <picture>
+                <img src="images/forets.webp" alt="l'shi" width="300" height="225">
+            </picture>
+            <p>Lubumbashi City</p>
+        </section>
+        <section class="certificate-box">
+            <h2>Web and Computer Programming certificate</h2>
+            <div class="boxButton">
+                <button class="courseButton" value="all" title="Filter button">All</button>
+                <button class="courseButton" value="cse" title="Filter button">CSE</button>
+                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
+            </div>
+            <div class="boxcertificate01 boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear">Lorem</span> Jose Okungu |
+            Lubumbashi, DRC 🇨🇩</p>
+        <p id="lastModified">Lorem ipsum</p>
+        
+    </footer>
+</body>
+
+</html>
