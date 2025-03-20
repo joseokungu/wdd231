@@ -1,0 +1,39 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    #nav-title {
+        font-size: 1.5em;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+    .nav-info input {
+        display: none;
+    }
+    .list section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "title address1 address2 phone email";
+    }
+
+}
+
+/* Tailwind Breakpoints */
+/* @media (min-width: 640px) { ... } */
+/* md	768px	@media (min-width: 768px) { ... } */
+/* lg	1024px	@media (min-width: 1024px) { ... } */
+/* xl	1280px	@media (min-width: 1280px) { ... } */
+/* 2xl	1536px	@media (min-width: 1536px) { ... } */
+
+/* Bootstrap Breakpoints */
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
