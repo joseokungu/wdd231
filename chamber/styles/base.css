@@ -225,18 +225,6 @@ main {
     background-position: center;
     padding: 150px 0;
 }
-.hero-home {
-    background-image: url("../images/west-valley-lp.webp");
-}
-.hero-join {
-    background-image: url("../images/hero/litchfield-park.webp");
-}
-.hero-directory {
-    background-image: url("../images/hero/buisness-park.webp");
-}
-.hero-discover {
-    background-image: url("../images/hero/sunset.webp");
-}
 
 .container {
     max-width: 1200px;
