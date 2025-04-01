@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/webp" href="images/favicon.ico.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lubumbashi City Chamber of Commerce</title>
+    <meta name="description" content="Directory of Members - Lubumbashi city Chamber or Commerce" />
+    <link rel="canonical" href="https://jose.github.io/wdd231/chamber/join" />
+    <meta name="author" content="Jose Okitandende Okungu" />
+    <meta name="copyright" content="Copyright 2025" />
+    <meta name="theme-color" content="#006EB6" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Join - Lubumbashi city Chamber of Commerce" />
+    <meta property="og:description" content="Lubumbashi city Chamber of Commerce - Join" />
+    <meta property="og:url" content="https://joseokungu.github.io/wdd231/chamber/join" />
+    <meta property="og:site_name" content="Join- Lubumbashi city Chamber of Commerce" />
+    <meta property="og:image" content="https://joseokungu.github.io/wdd231/chamber/images/lub-city.webp" />
+    <meta property="og:image:alt" content="An arial photo of the okapi, AZ Lubumbashi area." />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <link type="text/css" rel="stylesheet" href="./styles/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/base.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/larger.css" />
+
+
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-brand">
+            <img src="images/lub-city.webp" alt="Lubumbashi city Chamber of Commerce" width="60" height="60" />
+            <h1 id="nav-title">Lubumbashi City Chamber of Commerce</h1>
+        </div>
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html" class="active-page">Join</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="dark-mode-btn">
+                <input type="checkbox" id="darkOption" class="checkbox" onclick="screenMode()" />
+                <label for="darkOption" class="toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <main>
+        <section class="hero hero-join">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Lubumbashi City Chamber of Commerce</h2>
+                    <p>Join our thriving community within the Lubumbashi of Cobalt.</p>
+                </div>
+            </div>
+        </section>
+        <div class="form-wrapper">
+            <!-- <h2 class="header">Join the West Valley Chamber of Commerce</h2> -->
+            <div class="column1">
+                <div class="form-section">
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Applicant Information</legend>
+                            <label class="top">First Name* <input type="text" id="fname" name="fname"
+                                    placeholder="First Name" required /></label>
+                            <label class="top">Last Name* <input type="text" id="lname" name="lname"
+                                    placeholder="Last Name" required /></label>
+                            <label class="top">Title or Position*
+                                <input type="text" id="position" name="position" pattern="[a-zA-Z\- ]{7,}" required />
+                            </label>
+                            <label class="top">Email*
+                                <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
+                                    title="Please enter a valid email address" /></label>
+                            <label class="top">Mobile Phone*
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    placeholder="5559991234" required /></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            <label class="top">Business/Organization's Name* <input type="text" id="business"
+                                    name="business" required /></label>
+                            <label class="top">Business/Organization Description <textarea id="description"
+                                    name="description"></textarea></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Membership</legend>
+                            <div>Membership Level</div>
+                            <label class="sbs"><input type="radio" name="membership" value="np" required /> Non
+                                Profit</label>
+                            <label class="sbs"><input type="radio" name="membership" value="bronze" required /> Bronze
+                                Membership</label>
+                            <label class="sbs"><input type="radio" name="membership" value="silver" required /> Silver
+                                Membership</label>
+                            <label class="sbs"><input type="radio" name="membership" value="gold" required /> Gold
+                                Membership</label>
+                        </fieldset>
+                        <div id="submitmessage" class="hide" role="alert"></div>
+                        <button class="submitBtn" type="submit" onclick="validateForm(event)">Join</button>
+
+                        <input type="hidden" name="timestampmilli" id="timestampmilli" />
+                    </form>
+                </div>
+            </div>
+            <div class="column2">
+                <section class="membership-cards">
+                    <h2>Membership Levels</h2>
+                    <div class="membership-card-container">
+                        <div class="member-card">
+                            <h3 class="np">Non Profit</h3>
+                            <div>
+                                <p><strong>Cost:</strong> For non profit organizations and there is no fee.</p>
+                                <p><strong>Benefits:</strong></p>
+                                <ul>
+                                    <li>Access to basic resources and information.</li>
+                                    <li>Subscription to newsletters or updates.</li>
+                                    <li>Invitation to general events or meetings.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <h3 class="bronze">Bronze Membership</h3>
+                            <div>
+                                <p><strong>Cost:</strong> Slightly higher than the non-profit level.</p>
+                                <p><strong>Benefits:</strong></p>
+                                <ul>
+                                    <li>All benefits of the non-profit level.</li>
+                                    <li>Additional access to certain training sessions or workshops.</li>
+                                    <li>Recognition on the organization's website or publications.</li>
+                                    <li>Discounted rates for specific events or services.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <h3 class="silver">Silver Membership</h3>
+                            <div>
+                                <p><strong>Cost:</strong> Slightly higher than the Bronze level.</p>
+                                <p><strong>Benefits:</strong></p>
+                                <ul>
+                                    <li>All benefits of the Bronze level.</li>
+                                    <li>Priority registration for events or workshops.</li>
+                                    <li>Featured spotlight positions on the organization's website or social media.</li>
+                                    <li>Enhanced networking opportunities, such as exclusive meet-and-greets.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <h3 class="gold">Gold Membership</h3>
+                            <div>
+                                <p><strong>Cost:</strong> Slightly higher than the Silver level.</p>
+                                <p><strong>Benefits:</strong></p>
+                                <ul>
+                                    <li>All benefits of the Silver level.</li>
+                                    <li>Exclusive access to VIP events or private networking sessions.</li>
+                                    <li>Personalized advertising opportunities, such as dedicated email blasts or
+                                        sponsored content.</li>
+                                    <li>Special recognition at major events or in organizational materials.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Footer  -->
+    <footer>
+        <section class="footer">
+            <div class="footer-title">
+                <img src="images/lub-city.webp" alt="Lubumbashi city Chamber of Commerce" width="60" height="60" />
+                <h2>Lubumbashi City Chamber of Commerce</h2>
+            </div>
+            <div class="footer-addr">
+                <h3>Contact</h3>
+                <address>
+                    5555 W Somewhere Blvd<br />
+                    Kundelungu Park, AZ 80390<br />
+                    <a class="footer-btn" href="mailto:example@gmail.com">Email Us</a>
+                </address>
+            </div>
+            <div class="footer-nav">
+                <h3>Links</h3>
+                <ul class="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </div>
+
+            <div class="legal">
+                <div class="">
+                    <span><span id="cYear">&copy;</span> Lubumbashi City Chamber of Commerce | Jose Okitandende | WDD
+                        231 Project</span>
+                </div>
+                <div class="">
+                    <span id="lastModified"></span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- /Footer  -->
+    <script src="scripts/chamberjs.js"></script>
+    <!-- <script src="scripts/timeStamp.js"></script> -->
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
