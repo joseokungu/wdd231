@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/webp" href="images/favicon.ico.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lubumbashi City Chamber of Commerce</title>
+    <meta name="description" content="Directory of Members - Lubumbashi city Chamber or Commerce" />
+    <link rel="canonical" href="https://jose.github.io/wdd231/chamber/directory" />
+    <meta name="author" content="Jose Okitandende Okungu" />
+    <meta name="copyright" content="Copyright 2025" />
+    <meta name="theme-color" content="#006EB6" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Directory of Members - Lubumbashi city Chamber or Commerce" />
+    <meta property="og:description" content="Lubumbashi city Chamber or Commerce - Directory of Members" />
+    <meta property="og:url" content="https://joseokungu.github.io/wdd231/chamber/directory" />
+    <meta property="og:site_name" content="Directory of Members - Lubumbashi city Chamber or Commerce" />
+    <meta property="og:image" content="https://joseokungu.github.io/wdd231/chamber/images/lub-city.webp" />
+    <meta property="og:image:alt" content="An arial photo of the okapi, AZ Lubumbashi area." />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <link type="text/css" rel="stylesheet" href="./styles/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/base.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/larger.css" />
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-brand">
+            <img src="images/lub-city.webp" alt="Lubumbashi city Chamber of Commerce" width="60" height="60" />
+            <h1 id="nav-title">Lubumbashi City Chamber of Commerce</h1>
+        </div>
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="index.html" class="active-page">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="./directory.html">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="dark-mode-btn">
+                <input type="checkbox" id="darkOption" class="checkbox" onclick="screenMode()" />
+                <label for="darkOption" class="toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <main>
+        <section class="hero hero-home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Lubumbashi City Chamber of Commerce</h2>
+                    <p>Fostering a thriving community within the Lubumbashi of the Cobalt.</p>
+                    <a href="#" class="btn">Join Us</a>
+                </div>
+            </div>
+        </section>
+        <div id="banner" class="" role="alert">
+            <p>Join us for the Chamber of Commerce meet and greet on Monday at 7:00 p.m.!</p>
+            <button type="button" id="closeBanner" aria-label="Close">x</button>
+        </div>
+        <div class="info">
+            <section class="style5">
+                <h2>Up Coming Events</h2>
+                <div class="event-card-container">
+                    <div class="event-card">
+                        <h3>Theater in the Park</h3>
+                        <div>April 9, 2025 from 4-7 p.m. | Goodyear Civic Square</div>
+                        <p>Join us for a live performance of The Wizard of Oz at this year’s Theater in the Park!</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Spring Training</h3>
+                        <div>April 15, 2025 from 12-4 p.m. | Goodyear Ballpark</div>
+                        <p>Come out and enjoy a day at the ballpark as the Cleveland Guardians take on the Cincinnati
+                            Reds!</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Food Truck Festival</h3>
+                        <div>April 22, 2025 from 5-9 p.m. | Litchfield Park</div>
+                        <p>Sample a variety of delicious food from local food trucks at this year’s Food Truck Festival!
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Luke Days</h3>
+                        <div>April 28, 2025 from 10 a.m. - 4 p.m. | Luke Air Force Base</div>
+                        <p>Experience the excitement of Luke Days, featuring thrilling aerial performances and static
+                            aircraft displays!</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Concert in the Park</h3>
+                        <div>April 29, 2025 from 6-9 p.m. | Surprise Community Park</div>
+                        <p>Enjoy live music from local bands at this year’s Concert in the Park!</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>White Tank Heritage Run</h3>
+                        <div>May 6, 2025 from 8-11 a.m. | White Tank Foothill Mountains</div>
+                        <p>Join us at the Peace place zoo in beautiful Verrado for the a fun morning run.
+                            Choose from three distances 1 mile fun run/walk, 5K Run/Walk or 10K Run.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Local Weather</h2>
+                <div class="weather-info">
+                    <article id="weather">
+                        <h3>Weather Right Now</h3>
+                        <p id="location"></p>
+                        <figure>
+                            <div class="temp-area">
+                            </div>
+                            <figcaption id="weather-description"></figcaption>
+                        </figure>
+                        <div class="alt-weather">
+                            <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                            <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                            <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                            <div class="weather-box">Wind Chill:<span id="wind-chill"></span></div>
+                        </div>
+                    </article>
+                    <article id="five-day">
+                        <h3>Five Day Forecast</h3>
+                        <div id="forecast"></div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="spotlights">
+            <div class="cards"></div>
+        </div>
+    </main>
+    <!-- Footer  -->
+    <footer>
+        <section class="footer">
+            <div class="footer-title">
+                <img src="images/lub-city.webp" alt="West Valley Chamber of Commerce" width="60" height="60" />
+                <h2>Lubumbashi City Chamber of Commerce</h2>
+            </div>
+            <div class="footer-addr">
+                <h3>Contact</h3>
+                <address>
+                    5555 W Somewhere Blvd<br />
+                    Kundelungu Park, AZ 80390<br />
+                    <a class="footer-btn" href="mailto:example@gmail.com">Email Us</a>
+                </address>
+            </div>
+            <div class="footer-nav">
+                <h3>Links</h3>
+                <ul class="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </div>
+
+            <div class="legal">
+                <div class="">
+                    <span><span id="cYear">&copy;</span> Lubumbashi City Chamber of Commerce | Jose Okitandende | WDD
+                        231 Project</span>
+                </div>
+                <div class="">
+                    <span id="lastModified"></span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- /Footer  -->
+    <script src="scripts/chamberJS.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+
+
+</body>
+
+</html>
