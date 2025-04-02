@@ -1,0 +1,40 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+    #nav-title {
+        font-size: 1.2em;
+    }
+
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+    .weather {
+        grid-column: 2/3;
+        order: 2;
+    }
+
+    .events {
+        grid-column: 1/2;
+        order: 1;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-info input {
+        display: none;
+    }
+    .form-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-template-areas:
+            "header header"
+            "form membership";
+    }
+    .list section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "title address1 phone"
+            ". address2 email";
+    }
+
+}
